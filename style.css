@@ -1,0 +1,1421 @@
+/* === PALETA DE COLORES (Variables CSS) === */
+:root {
+    /* Efectos y Sombras *//* Colores Principales de Marca */
+    --color-promart-orange: #FF6900;    /* Naranja vibrante para llamados a la acción */
+    --color-promart-yellow: #FFD200;    /* Amarillo para acentos y ofertas */
+    --color-promart-blue-dark: #003366; /* Azul marino para seriedad y confianza */
+    --color-meta-blue: #003366;  
+    /* Colores de Interfaz */
+    --color-text-dark: #333333;
+    --color-grey-dark: #666666;
+    --color-background-light: #F4F4F4; 
+    --color-white: #FFFFFF;
+    --color-grey-border: #E0E0E0;
+    --color-action-green: #28a745;
+    --color-error: #dc3545;
+    
+    /* Efectos y Sombras */
+    --shadow-standard: 0 2px 10px rgba(0,0,0,0.1);
+    --shadow-hover: 0 8px 25px rgba(0,0,0,0.15);
+    --transition-fast: 0.3s ease;
+}
+
+/* === RESET Y ESTILOS BASE === */
+* {
+    /* Asegura que el padding y el borde no aumenten el tamaño del elemento (modelo de caja) */
+    box-sizing: border-box; 
+    /* Elimina el margen por defecto de todos los elementos */
+    margin: 0;
+    /* Elimina el padding por defecto de todos los elementos */
+    padding: 0;
+}
+
+body {
+    /* Tipografía moderna y compatible con sistemas Apple y Android */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    /* Altura de línea estándar para buena legibilidad */
+    line-height: 1.6;
+    /* Aplica el color de fondo claro definido en las variables */
+    background-color: var(--color-background-light); 
+    /* Aplica el color de texto oscuro principal */
+    color: var(--color-text-dark);
+}
+
+a {
+    /* Elimina el subrayado por defecto de los enlaces */
+    text-decoration: none;
+    /* Color de enlace principal (Meta Blue) */
+    color: var(--color-promart-blue-dark);
+    /* Transición suave para los cambios de color */
+    transition: color 0.3s;
+}
+
+a:hover {
+    /* Mantiene el color azul al pasar el ratón */
+    color: var(--color-promart-blue-dark);
+    /* Añade el subrayado al pasar el ratón */
+    text-decoration: underline;
+}
+
+/* ========================================================= */
+/* === TIPOGRAFÍA GENERAL === */
+/* ========================================================= */
+.titulo-seccion {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    /* Color de los títulos de sección (Meta Blue) */
+    color: var(--color-promart-blue-dark); 
+    margin: 40px 0 20px;
+    padding-bottom: 10px;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+.titulo-seccion::after {
+    /* Elemento pseudo para crear la línea de acento debajo del título */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    /* Centra la línea horizontalmente */
+    transform: translateX(-50%); 
+    width: 60px;
+    height: 4px;
+    /* Color de acento verde */
+    background-color: var(--color-action-green); 
+    border-radius: 2px;
+}
+
+h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--color-text-dark);
+}
+/* === BARRA SUPERIOR DE INFORMACIÓN (Top Bar) === */
+.top-bar {
+    /* Fondo azul */
+    background-color: var(--color-promart-blue-dark);
+    color: var(--color-white);
+    /* Relleno vertical ajustado para que sea más delgado */
+    padding: 5px 5%; 
+    font-size: 0.7em;
+    /* Distribución de elementos horizontal y espaciada */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.top-item {
+    display: flex;
+    align-items: center;
+    /* Espacio entre el icono y el texto */
+    gap: 10px; 
+}
+
+.top-item i {
+    font-size: 1.2em;
+}
+
+.top-item strong {
+    font-weight: 700;
+    display: block;
+}
+
+.top-bar a {
+    /* Los enlaces en la barra superior son blancos */
+    color: var(--color-white);
+}
+
+/* ========================================================= */
+/* === NAVBAR PRINCIPAL (Header) === */
+/* ========================================================= */
+.navbar {
+    background-color: var(--color-promart-orange);
+    box-shadow: var(--shadow-standard);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.contenedor-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite ajuste en móviles */
+}
+
+.logo-text {
+    color: var(--color-white);
+    font-size: 1.8em;
+    font-weight: 900;
+    font-style: italic;
+    white-space: nowrap;
+}
+
+/* Buscador Central */
+.buscador-central {
+    flex-grow: 1;
+    max-width: 600px;
+    display: flex;
+    position: relative;
+}
+
+.buscador-central input {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.buscador-central .btn-buscar {
+    background-color: var(--color-promart-yellow);
+    border: none;
+    padding: 0 20px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    color: var(--color-meta-blue);
+}
+/* === AGREGAR ESTO PARA LAS SUGERENCIAS DEL BUSCADOR === */
+
+/* Lista flotante de resultados */
+.lista-sugerencias {
+    position: absolute;
+    top: 100%;       /* Aparece justo debajo del input */
+    left: 0;
+    width: 100%;     /* Mismo ancho que el buscador */
+    background: var(--color-white);
+    border: 1px solid var(--color-grey-border);
+    border-top: none; /* Se une visualmente con el input */
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 2000;   /* Mayor que el navbar para que flote encima */
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;   /* Se controla con JS */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Elementos individuales de la lista */
+.lista-sugerencias li {
+    padding: 12px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95em;
+    color: var(--color-text-dark);
+    transition: background 0.2s;
+}
+
+/* Efecto al pasar el mouse por una sugerencia */
+.lista-sugerencias li:hover {
+    background-color: var(--color-background-light);
+    color: var(--color-promart-blue-dark);
+    font-weight: 500;
+}
+
+/* Icono dentro de la sugerencia (opcional si usas JS con icono) */
+.lista-sugerencias li i {
+    color: var(--color-grey-dark);
+    font-size: 0.8em;
+}
+
+/* Botón Carrito */
+.acciones-barra {
+    display: flex;
+    align-items: center;
+}
+
+.btn-carrito {
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-size: 1.8em;
+    cursor: pointer;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background-color: var(--color-promart-yellow);
+    color: var(--color-meta-blue);
+    font-size: 0.6em;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    border: 2px solid var(--color-promart-orange);
+}
+
+/* Navegación Principal (Menú debajo del Header) */
+.nav-principal {
+    background-color: var(--color-white);
+    border-top: 1px solid var(--color-grey-border);
+    padding: 0 5%;
+}
+
+.menu-rediseñado {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.menu-rediseñado > li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu-rediseñado > li > a {
+    color: var(--color-text-dark);
+    font-weight: 500;
+    padding: 10px 0;
+    display: block;
+    transition: color 0.3s, border-bottom 0.3s;
+    /* Línea transparente para el efecto hover */
+    border-bottom: 3px solid transparent;
+}
+
+.menu-rediseñado > li > a:hover {
+    color: var(--color-meta-blue);
+    /* Revela la línea azul al pasar el ratón */
+    border-bottom-color: var(--color-promart-blue-dark); 
+    text-decoration: none;
+}
+
+.menu-rediseñado a.active {
+    /* Estilo para el enlace de la página actual */
+    color: var(--color-meta-blue);
+    border-bottom-color: var(--color-promart-blue-dark);
+    font-weight: 600;
+}
+
+/* Submenús Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    list-style: none;
+    position: absolute;
+    /* Se posiciona justo debajo del elemento padre */
+    top: 100%; 
+    left: 0;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey-border);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    /* Asegura que el submenú esté por encima de casi todo */
+    z-index: 1050; 
+    /* Oculto por defecto */
+    display: none; 
+    padding: 10px 0;
+}
+
+.dropdown:hover > .submenu {
+    /* Muestra el submenú al pasar el ratón sobre el padre */
+    display: block;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu a {
+    padding: 10px 20px;
+    display: block;
+    color: var(--color-text-dark);
+}
+
+.submenu a:hover {
+    /* Color de fondo sutil al pasar sobre un ítem del submenú */
+    background-color: var(--color-background-light); 
+    color: var(--color-promart-blue-dark);
+    text-decoration: none;
+}
+
+.dropdown-sub {
+    position: relative;
+}
+
+/* Sub-Submenús (Nivel 3) */
+.submenu-right {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    /* Se posiciona a la derecha del submenú padre */
+    left: 100%; 
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey-border);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    z-index: 1060;
+    /* Oculto por defecto */
+    display: none;
+}
+
+.dropdown-sub:hover > .submenu-right {
+    /* Muestra el sub-submenú al pasar el ratón */
+    display: block;
+}
+
+.dropdown-sub a i {
+    /* Estilo para el icono que indica un nivel más profundo */
+    font-size: 0.8em; 
+    margin-left: 5px;
+}
+
+/* ========================================================= */
+/* === HERO SLIDER (Carrusel Principal) === */
+/* ========================================================= */
+.hero {
+    position: relative;
+    height: 76vh;        /* ⭐ AUMENTA SOLO LA ALTURA */
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.hero-slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    display: block;
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;          /* ▶ Mantiene el ancho normal */
+    height: 100%;         /* ▶ Se estira solo hacia abajo */
+    object-fit: cover;    /* ▶ No deforma la imagen */
+    display: block;
+}
+
+.hero-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--color-white);
+    padding: 0 10%;
+}
+
+.hero-caption h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.hero-caption p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.hero-caption .btn-primary {
+    background-color: var(--color-action-green);
+    color: var(--color-white);
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 800;
+    transition: background-color 0.3s;
+}
+
+.hero-caption .btn-primary:hover {
+    background-color: #2e8b4b;
+    text-decoration: none;
+}
+
+.hero-controls button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: var(--color-white);
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 900;
+    transition: background 0.3s;
+}
+
+.hero-controls button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.hero-arrow.prev {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.hero-arrow.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.hero-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 950;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: var(--color-white);
+}
+
+/* --- ANIMACIÓN PROFESIONAL DE TEXTO (SOLICITADA POR EL USUARIO) --- */
+
+/* 1. Definición de Keyframes: movimiento y fundido */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        /* Empieza un poco abajo */
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 2. Estado inicial: Ocultar y posicionar ligeramente para la animación */
+.hero-caption h1, 
+.hero-caption p, 
+.hero-caption .btn-primary {
+    /* Estado inicial que será anulado por .slide.active */
+    opacity: 0;
+    transform: translateY(20px);
+    /* Asegura que el estado inicial se aplique inmediatamente al cambiar de diapositiva */
+    transition: none; 
+}
+
+/* 3. Estado Activo: Aplicar la animación con retraso para un efecto profesional */
+.slide.active .hero-caption h1 {
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideInUp 0.8s ease-out forwards;
+    animation-delay: 0.1s; /* Empieza primero */
+}
+
+.slide.active .hero-caption p {
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideInUp 0.8s ease-out forwards;
+    animation-delay: 0.4s; /* Pequeño retraso después del título */
+}
+
+.slide.active .hero-caption .btn-primary {
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideInUp 0.8s ease-out forwards;
+    animation-delay: 0.7s; /* Último en aparecer */
+}
+/* ========================================================= */
+/* === CARRUSEL Y TARJETAS DE PRODUCTOS === */
+/* ========================================================= */
+.catalogo {
+    padding: 0 20px;
+}
+
+.carousel-wrapper {
+    position: relative;
+    /* Esencial: Oculta los productos que están fuera de vista */
+    overflow: hidden; 
+    margin: 20px 0 60px;
+    padding: 0 5%;
+}
+
+.carousel-track {
+    /* Contenedor de los productos que se desliza */
+    display: flex; 
+    gap: 20px;
+    /* Transición para el efecto de movimiento horizontal */
+    transition: transform 0.5s ease-out; 
+}
+
+.carousel-btn {
+    /* Botones de navegación del carrusel */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--color-white);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 500;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.titulo-main {
+    font-size: 2em;
+    font-weight: 900;
+    color: var(--color-promart-blue-dark);
+    margin: 50px 5% 30px;
+    padding-left: 20px;
+    border-left: 8px solid var(--color-promart-orange);
+    text-transform: uppercase;
+}
+ 
+/* Tarjeta de Producto (Producto Card) */
+.producto {
+    /* Ancho fijo para cada tarjeta en el carrusel */
+    min-width: 280px; 
+    max-width: 280px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey-border);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    /* Configuración Flexbox para mantener el botón en la parte inferior */
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    /* Transiciones para el efecto hover */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Asegura que todas las tarjetas tengan la misma altura */
+    height: 100%; 
+}
+
+.producto:hover {
+    box-shadow: var(--shadow-hover);
+    border-color: var(--color-promart-orange);
+    transform: translateY(-5px);
+}
+.producto.hidden {
+    /* Utilizado por JavaScript para ocultar temporalmente */
+    display: none;
+}
+
+.producto img {
+    max-width: 100%;
+    /* Altura fija para la imagen, evita saltos de diseño */
+    height: 200px; 
+    /* Ajusta la imagen sin recortar */
+    object-fit: contain; 
+    margin-bottom: 10px;
+    background-color: var(--color-white);
+    padding: 5px;
+}
+
+.producto h3 {
+    /* Permite que el título ocupe el espacio antes del botón */
+    flex-grow: 1; 
+    margin-bottom: 15px;
+    /* Altura fija para el truncamiento */
+    height: 3em; 
+    /* Propiedades para limitar el texto a 2 líneas y añadir puntos suspensivos */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Cantidad de líneas visible (Webkit) */
+    line-clamp: 2;          /* Cantidad de líneas visible (Estándar W3C) */
+    -webkit-box-orient: vertical;
+}
+
+.acciones {
+    margin-top: 10px;
+}
+
+.btn-agregar {
+    background-color: var(--color-white);
+    color: var(--color-promart-orange);
+    border: 2px solid var(--color-promart-orange);
+    padding: 12px;
+    font-weight: 800;
+    border-radius: 4px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.btn-agregar:hover {
+    background-color: var(--color-promart-orange);
+    color: var(--color-white);
+}
+
+/* ========================================================= */
+/* === MEDIA QUERIES (Responsiveness) === */
+/* ========================================================= */
+
+/* Adaptaciones para móviles pequeños (max-width: 480px) */
+@media (max-width: 480px) {
+    .producto {
+        /* Hace que la tarjeta ocupe la mayoría del ancho de la vista */
+        min-width: 90vw; 
+        max-width: 90vw;
+    }
+    .carousel-wrapper {
+        padding: 0;
+    }
+}
+
+
+/* ========================================================= */
+/* === SECCIÓN DE BENEFICIOS (Características) === */
+/* ========================================================= */
+.beneficios {
+    background-color: var(--color-promart-blue-dark);
+    padding: 40px 3%;
+    /* Distribuye los beneficios equitativamente */
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    /* Sombra sutil en la parte superior */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05); 
+}
+
+.beneficio-card {
+    text-align: center;
+    max-width: 200px;
+}
+
+.beneficio-card i {
+    /* Iconos de beneficio (azules) */
+    font-size: 2.5em; 
+    color: var(--color-grey-border);
+    margin-bottom: 10px;
+}
+
+.beneficio-card h3 {
+    font-size: 1.2em;
+    color: var(--color-grey-border);
+}
+
+.beneficio-card p {
+    color: var(--color-grey-dark);  
+}
+
+/* ========================================================= */
+/* === FOOTER === */
+/* ========================================================= */
+.footer {
+    /* Fondo oscuro para el pie de página */
+    background-color: var(--color-text-dark); 
+    color: var(--color-white);
+    padding: 40px 5% 10px;
+}
+
+.footer-container {
+    /* Distribución de columnas en el footer */
+    display: flex; 
+    justify-content: space-between;
+    gap: 30px;
+    /* Permite que las columnas salten de línea en móvil */
+    flex-wrap: wrap; 
+    /* Línea divisoria entre contenido y copyright */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-col {
+    min-width: 200px;
+    /* Permite que las columnas se expandan */
+    flex: 1; 
+}
+
+.logo-footer {
+    color: var(--color-white);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.slogan-footer {
+    font-size: 0.9em;
+    color: var(--color-grey-dark);
+}
+
+.footer-col h4 {
+    /* Títulos de columna (azules) */
+    font-size: 1.1em; 
+    margin-bottom: 20px;
+    position: relative;
+    color: var(--color-white );
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a,
+.footer-col ul li i {
+    color: var(--color-white);
+    font-size: 0.9em;
+}
+
+.footer-col ul li i {
+    /* Iconos de contacto (azules) */
+    margin-right: 10px;
+    color: var(--color-white); 
+}
+
+.footer-social a {
+    /* Estilos para los iconos de redes sociales */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    /* Fondo semitransparente */
+    background-color: rgba(255, 255, 255, 0.1); 
+    margin-right: 10px;
+    border-radius: 50%;
+    color: var(--color-white);
+    transition: background-color 0.3s;
+}
+
+.footer-social a:hover {
+    /* Fondo azul al pasar el ratón */
+    background-color: var(--color-meta-blue); 
+}
+
+.footer-bottom {
+    /* Copyright / Información legal */
+    text-align: center; 
+    font-size: 0.8em;
+    padding: 10px 0;
+    color: var(--color-grey-dark);
+}
+
+/* ========================================================= */
+/* === CARRITO PANEL LATERAL === */
+/* ========================================================= */
+.carrito-overlay {
+    /* Capa oscura de fondo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Alto z-index para estar sobre todo */
+    z-index: 10000; 
+    /* Oculto por defecto */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.carrito-overlay.visible {
+    /* Muestra el overlay */
+    opacity: 1; 
+    visibility: visible;
+}
+
+.carrito-panel {
+    /* Panel lateral deslizante */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    background-color: var(--color-white);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    /* Oculto: fuera de la pantalla a la derecha */
+    transform: translateX(100%); 
+    transition: transform 0.3s ease-out;
+    z-index: 10001;
+    display: flex;
+    /* Organiza header, contenido y acciones verticalmente */
+    flex-direction: column; 
+}
+
+.carrito-panel.abierto {
+    /* Muestra el panel deslizándolo */
+    transform: translateX(0); 
+}
+
+.carrito-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid var(--color-grey-border);
+}
+
+.carrito-header h3 {
+    font-size: 1.4em;
+    color: var(--color-meta-blue);
+}
+
+.carrito-header button {
+    /* Botón de cerrar (la X) */
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: var(--color-text-dark);
+}
+
+.carrito-contenido {
+    /* Permite que el contenido se desplace verticalmente */
+    flex-grow: 1; 
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.carrito-vacio {
+    text-align: center;
+    color: var(--color-grey-dark);
+    margin-top: 50px;
+}
+
+.carrito-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed var(--color-grey-border);
+}
+
+.item-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 10px;
+    border: 1px solid var(--color-grey-border);
+    border-radius: 4px;
+}
+
+.item-details {
+    /* Ocupa el espacio restante en el ítem */
+    flex-grow: 1; 
+}
+
+.item-details h4 {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.item-details p {
+    font-size: 0.9em;
+    color: var(--color-grey-dark);
+}
+
+.btn-eliminar {
+    background: none;
+    border: none;
+    /* Color rojo para el botón de eliminar */
+    color: #ff0000; 
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-left: 10px;
+}
+
+.carrito-acciones {
+    /* Contenedor de los botones inferiores (vaciar/cotizar) */
+    padding: 20px;
+    border-top: 1px solid var(--color-grey-border);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-secundario {
+    /* Botón de Vaciar Carrito */
+    background-color: var(--color-grey-border);
+    color: var(--color-text-dark);
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-secundario:hover:not(:disabled) {
+    background-color: #ccc;
+}
+
+.btn-whatsapp-panel {
+    /* Botón principal de cotización (verde de acción) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: var(--color-action-green);
+    color: var(--color-white);
+    padding: 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-whatsapp-panel:hover:not(:disabled) {
+    background-color: #2e8b4b;
+}
+
+.btn-whatsapp-panel:disabled,
+.btn-secundario:disabled {
+    /* Estilo para botones deshabilitados */
+    opacity: 0.6; 
+    cursor: not-allowed;
+}
+
+/* ========================================================= */
+/* === WHATSAPP FLOTANTE === */
+/* ========================================================= */
+.whatsapp-flotante {
+    /* Fija la posición en la esquina inferior derecha */
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    /* Alto z-index */
+    z-index: 9999; 
+}
+
+.whatsapp-icon-btn {
+    /* Botón redondo flotante */
+    background-color: var(--color-action-green);
+    color: var(--color-white);
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.whatsapp-icon-btn i {
+    font-size: 5.2em; /* Ajusta el tamaño */
+    color: var(--color-white);
+}
+.whatsapp-icon-btn svg {
+    width: 30px;
+    height: 30px;
+}
+
+.whatsapp-popup-content {
+    /* Contenido que se despliega sobre el botón */
+    position: absolute;
+    bottom: 90px;
+    right: 0;
+    width: 320px;
+    background: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* Oculto por defecto */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+}
+
+.whatsapp-popup-content.active {
+    /* Muestra el pop-up */
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.whatsapp-header {
+    /* Encabezado del pop-up (azul Meta) */
+    background-color: var(--color-action-green); 
+    color: var(--color-white);
+    padding: 16px;
+    border-radius: 8px 8px 0 0;
+}
+
+.whatsapp-header p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.whatsapp-subtext {
+    font-size: 0.85em;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.whatsapp-note {
+    /* Nota informativa dentro del pop-up */
+    padding: 10px 15px;
+    font-size: 0.8em;
+    color: var(--color-grey-dark);
+    border-bottom: 1px solid var(--color-grey-border);
+}
+
+.whatsapp-contacto {
+    /* Enlace de contacto individual */
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--color-grey-border);
+    text-decoration: none;
+    color: var(--color-text-dark);
+    transition: background-color 0.3s;
+}
+
+.whatsapp-contacto:last-child {
+    border-bottom: none;
+}
+
+.whatsapp-contacto:hover {
+    background-color: var(--color-background-light);
+    text-decoration: none;
+}
+
+.contacto-icon-wrapper {
+    /* Círculo de icono */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-meta-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.contacto-icon-wrapper span {
+    color: var(--color-white);
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.contacto-details {
+    flex-grow: 1;
+}
+
+.contacto-chat-icon {
+    /* Icono de flecha o chat */
+    font-size: 1.2em;
+    color: var(--color-action-green);
+}
+
+/* Adaptaciones para tabletas y pantallas medianas (max-width: 1024px) */
+@media (max-width: 800px) {
+    .contenedor-navbar {
+        /* Permite que los elementos de la navbar se organicen verticalmente si es necesario */
+        flex-wrap: wrap; 
+    }
+    .buscador-central {
+        /* Mueve el buscador debajo del logo y las acciones */
+        order: 3; 
+        width: 100%;
+        max-width: none;
+        margin-top: 10px;
+    }
+    .nav-principal {
+        padding: 0;
+    }
+    .menu-rediseñado {
+        /* Fuerza que el menú empiece a la izquierda */
+        justify-content: flex-start; 
+        /* Permite el desplazamiento horizontal del menú */
+        overflow-x: auto; 
+        padding: 10px 5%;
+    }
+    .menu-rediseñado > li {
+        /* Evita que los elementos se encojan */
+        flex-shrink: 0; 
+    }
+}
+
+/* Adaptaciones para dispositivos móviles (max-width: 768px) */
+@media (max-width: 768px) {
+    .top-bar {
+        /* Apila los elementos de la barra superior */
+        flex-direction: column; 
+        gap: 5px;
+        padding: 8px 5%;
+    }
+    .top-item {
+        font-size: 0.8em;
+    }
+    .hero-caption h1 {
+        font-size: 2.5em;
+    }
+    .hero-caption p {
+        font-size: 1.2em;
+    }
+    .beneficios {
+        /* Envuelve los beneficios en varias líneas en pantallas pequeñas */
+        flex-wrap: wrap; 
+    }
+    .beneficio-card {
+        margin: 15px;
+    }
+    .footer-container {
+        /* Apila las columnas del footer */
+        flex-direction: column; 
+    }
+}
+
+/* Adaptaciones para móviles pequeños (max-width: 480px) */
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 1.2em;
+    }
+    .logo .icono {
+        width: 30px;
+        height: 30px;
+    }
+    .btn-whatsapp {
+        padding: 6px 10px;
+    }
+    .producto {
+        /* Hace que la tarjeta ocupe la mayoría del ancho de la vista */
+        min-width: 90vw; 
+        max-width: 90vw;
+    }
+    .carousel-wrapper {
+        padding: 0;
+    }
+}
+/* === ESTILOS VISOR INTERACTIVO === */
+.visor-productos-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    border-top: 1px solid var(--color-grey-border);
+}
+
+.visor-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.visor-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.visor-header h2 {
+    color: var(--color-promart-blue-dark);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.visor-body {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Menú Izquierdo */
+.visor-menu {
+    flex: 0.85 ; /* Ocupa 1 parte */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.visor-btn {
+    background: white;
+    border: 2px solid transparent;
+    padding: 20px 20px;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.visor-btn i { color: var(--color-grey-dark); }
+
+/* Estado Activo (Seleccionado) */
+.visor-btn.active, .visor-btn:hover {
+    border-color: var(--color-promart-orange);
+    color: var(--color-promart-orange);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.visor-btn.active i { color: var(--color-promart-orange); }
+
+/* Área de Visualización Derecha */
+.visor-display {
+    flex: 2; /* Ocupa 2 partes (más ancho) */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    border: 1px solid #eee;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.visor-img-wrap {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.visor-img-wrap img {
+    max-width: 90%;
+    height: auto;
+    max-height: 550px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 10px rgba(0,0,0,0.2));
+}
+
+.visor-info {
+    flex: 1.2;
+}
+
+.visor-info h3 {
+    font-size: 1.8rem;
+    color: var(--color-promart-blue-dark);
+    margin-bottom: 15px;
+}
+
+.bomba-specs {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.bomba-specs li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.bomba-specs i {
+    color: var(--color-action-green);
+    margin-right: 8px;
+}
+
+.btn-cotizar-grande {
+    background-color: var(--color-promart-orange);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn-cotizar-grande:hover {
+    background-color: #e65c00;
+}
+
+/* Animación de cambio */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive para celular */
+@media (max-width: 768px) {
+    .visor-body {
+        flex-direction: column;
+    }
+    .visor-display {
+        flex-direction: column;
+        text-align: center;
+    }
+    .bomba-specs {
+        text-align: left;
+        display: inline-block;
+    }
+}
+/* === AJUSTE PARA QUE EL MENÚ SEA DESLIZABLE EN CELULAR === */
+@media (max-width: 768px) {
+    .visor-menu {
+        flex-direction: row; /* Pone los botones uno al lado del otro */
+        overflow-x: auto;    /* Permite deslizar con el dedo */
+        padding: 10px 5px;
+        gap: 10px;
+        width: 100%;
+        /* Ocultar la barra de scroll para que se vea limpio */
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; 
+    }
+    
+    .visor-menu::-webkit-scrollbar {
+        display: none;
+    }
+
+    .visor-btn {
+        flex: 0 0 auto; /* Evita que los botones se aplasten */
+        width: auto;    /* El ancho se ajusta al texto */
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        white-space: nowrap; /* Mantiene el texto en una línea */
+    }
+    
+    /* Ajuste para que la imagen no sea gigante en pantallas pequeñas */
+    .visor-img-wrap img {
+        max-height: 200px; 
+    }
+}

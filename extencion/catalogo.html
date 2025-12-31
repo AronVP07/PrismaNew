@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="PRISMA STELL — Catálogo corporativo de válvulas, conexiones y accesorios hidráulicos." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRISMA STELL</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9k5Vv9XgQ0z/V0Bw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="top-item">
+        <i class="fas fa-credit-card"></i>
+        <div>
+            <strong>COMPRA FÁCIL</strong>
+            <small>CON TARJETA, YAPE O EFECTIVO</small>
+        </div>
+    </div>
+    
+    <div class="top-item">
+        <i class="fas fa-clock"></i>
+        <div>
+            <strong>HORARIO</strong>
+            <small>L-S: 08:30 AM - 7:00 PM</small>
+        </div>
+    </div>
+</div>
+
+<header class="navbar">
+    <div class="contenedor-navbar">
+      <div class="logo">
+        <a href="../index.html">
+          <span class="logo-text">PRISMA STELL</span>
+        </a>
+      </div>
+
+            <div class="buscador-central">
+                <input type="text" id="inputBuscador" placeholder="¿Qué estás buscando para tu proyecto?">
+                <button class="btn-buscar">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+      <div class="acciones-barra">
+        <button class="btn-carrito" id="btnCarrito" aria-label="Abrir Carrito de Cotización">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge" id="carritoBadge">0</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav-principal">
+      <ul class="menu-rediseñado">
+      <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../historia/nosotros.html">Nosotros</a></li>
+        <li class="dropdown">
+          <a href="#" class="active"><i class="fas fa-boxes"></i> Productos</a>
+          <ul class="submenu">
+            <li><a href="../extencion/Valvulas_Accesorios_hidraulica.html">Válvulas y Accesorios Hidráulicos</a></li>
+            <li><a href="../extencion/tuberia_PVC.html">Accesorios de Tubería y PVC</a></li>
+            <li><a href="../extencion/herr_complementos.html">Herramientas y Complemento</a></li>
+            <li class="dropdown-sub">
+              <a href="#">Conexiones <i class="fas fa-chevron-right"></i></a>
+              <ul class="submenu-right">
+                <li><a href="../extencion/conex_galvanizado.html">Conexiones Galvanizadas</a></li>
+                <li><a href="../extencion/conex_PVC.html">Conexiones de PVC</a></li>
+                <li><a href="../extencion/conex_bronce.html">Conexiones de Bronce</a></li>
+                <li><a href="../extencion/conexion_hdpe.html">Conexiones HDPE</a></li>
+              </ul>
+            </li>
+            <li><a href="../extencion/uniones.html">Uniones</a></li>
+            <li><a href="../extencion/bridas.html">Bridas</a></li>
+            <li><a href="../extencion/marco_tapa.html">Marcos y Tapas</a></li>
+            <li><a href="../extencion/caneria.html">Cañeria</a></li>
+            <li><a href="../extencion/catalogo.html">Catalogo</a></li>
+          </ul>
+        </li>
+        <li><a href="../extencion/catalogo.html">Catalogo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<main class="catalogo">
+    <div class="container">
+        <h2 class="titulo-main">Catálogo General</h2>
+
+        <div class="tabs-container">
+            <div id="btn1" class="tab-box active" onclick="mostrarGrupo(1)">1</div>
+            <div id="btn2" class="tab-box" onclick="mostrarGrupo(2)">2</div>
+            <div id="btn3" class="tab-box" onclick="mostrarGrupo(3)">3</div>
+            <div id="btn4" class="tab-box" onclick="mostrarGrupo(4)">4</div>
+            <div id="btn5" class="tab-box" onclick="mostrarGrupo(5)">5</div>
+            <div id="btn6" class="tab-box" onclick="mostrarGrupo(6)">6</div>
+            <div id="btn7" class="tab-box" onclick="mostrarGrupo(7)">7</div>
+            <div id="btn8" class="tab-box" onclick="mostrarGrupo(8)">8</div>
+        </div>
+
+        <div id="contenedor-grupos">
+            
+            <div id="grupo1" class="productos-grid">
+                <div class="producto"><img src="../imagenes/actualizado/manual.png" alt="Bomba Manual"><h3>Bomba Manual</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/dsy-60.png" alt="Bomba Eléctrica DSY-60"><h3>Bomba Eléctrica DSY-60</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/dsy-25.png" alt="Bomba Eléctrica DSY-25"><h3>Bomba Eléctrica DSY-25</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div> 
+                <div class="producto"><img src="../imagenes/actualizado/abrazadera_electrofusion.png" alt="Abrazadera"><h3>Abrazadera Electrofusion</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Acoples_de_alta_presión.jpg" alt="Acoples"><h3>Acoples Alta Presion</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Adaptador_de_brida_rápida_para_tubería_de_hdpe.jpg" alt="Adaptador Brida"><h3>Adaptador Brida Rapida</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Adaptador_HDPE.png" alt="Adaptador HDPE"><h3>Adaptador HDPE</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Adaptador_macho_hdpe.png" alt="Adaptador Macho"><h3>Adaptador Macho HDPE</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Adaptador_PVC.jpg" alt="Adaptador PVC"><h3>Adaptador PVC</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Balde_de_Prueva_Hidraulica.jpg" alt="Balde Prueba"><h3>Balde Prueba Hidraulica</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/brida.png" alt="Brida"><h3>Brida</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Brida_UF_Inyectado_PVC.png" alt="Brida UF"><h3>Brida UF PVC</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Bridas_soldables_Citaly.png" alt="Bridas Soldables"><h3>Bridas Soldables Citaly</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Bushing galvanizado.jpg" alt="Bushing"><h3>Bushing Galvanizado</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Caja_termoplastico.jpg" alt="Caja Termo"><h3>Caja Termoplastico</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/CaÑ_BRONCE PESADO.png" alt="Caño Bronce"><h3>Caño Bronce Pesado</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/CAÑ_MANGO_AMARI.png" alt="Caño Mango"><h3>Caño Mango Amarillo</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+            </div>
+
+            <div id="grupo2" class="productos-grid hidden">
+                <div class="producto"><img src="../imagenes/actualizado/CAÑO_BOTADERO_LISO_BRONCE.png" alt="Caño Botadero"><h3>Caño Botadero Bronce</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/CAÑO_BOTADERO_LISO_CROMADO.png" alt="Caño Cromado"><h3>Caño Botadero Cromado</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/CAÑO_DOBLE_ENTRADA.png" alt="Caño Doble"><h3>Caño Doble Entrada</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Caño_Esferica_Rubistar.jpg" alt="Caño Rubistar"><h3>Caño Esferica Rubistar</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/CAÑO_JARDINERIA.png" alt="Caño Jardineria"><h3>Caño Jardineria</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/CAÑO_PVC.png" alt="Caño PVC"><h3>Caño PVC</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/CAÑO_ROSCA.png" alt="Caño Rosca"><h3>Caño Rosca</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/cinta_teflon_amarilla.png" alt="Cinta Amarilla"><h3>Cinta Teflon Amarilla</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/cinta_teflon-roja.png" alt="Cinta Roja"><h3>Cinta Teflon Roja</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Codo galvanizado 45º.jpg" alt="Codo Galv 45"><h3>Codo Galvanizado 45°</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Codo galvanizado.jpg" alt="Codo Galv"><h3>Codo Galvanizado 90°</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/codo_45&90_hdpe_termofusion.png" alt="Codo HDPE"><h3>Codo HDPE Termofusion</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/codo_alcantarilla.jpg" alt="Codo Alcantarilla"><h3>Codo Alcantarilla</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/codo_hdpe.png" alt="Codo HDPE"><h3>Codo HDPE</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+            </div>
+
+            <div id="grupo3" class="productos-grid hidden">
+                <div class="producto"><img src="../imagenes/actualizado/Codo_PVC.jpg" alt="Codo PVC"><h3>Codo PVC</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Codo45_PVC.jpg" alt="Codo 45 PVC"><h3>Codo 45° PVC</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Conexiones_alcantarillado_PVC.jpg" alt="Conexiones Alcantarillado"><h3>Conexion Alcantarillado</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Cruz galvanizado.jpg" alt="Cruz Galv"><h3>Cruz Galvanizada</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/cruz_hdpe_termofusion.png" alt="Cruz HDPE"><h3>Cruz HDPE Termo</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Cuchara_para_Concreto.jpg" alt="Cuchara"><h3>Cuchara para Concreto</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/cupla_union_electrofusion.png" alt="Cupla Electro"><h3>Cupla Union Electrofusion</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Curva_SEL_Tuboplast_PVC.jpg" alt="Curva SEL"><h3>Curva SEL Tuboplast</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/empaquetadura_neopreno.png" alt="Empaquetadura"><h3>Empaquetadura Neopreno</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Enlace_Recto_HDPE.jpg" alt="Enlace Recto"><h3>Enlace Recto HDPE</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/extintor.png" alt="Extintor"><h3>Extintor</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/hidrante_contra_incendio.png" alt="Hidrante"><h3>Hidrante Contra Incendio</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Kits_para_Varilla_para_Desatoro.jpg" alt="Kit Varilla"><h3>Kit Varilla Desatoro</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/manguera_hdpe_polietileno.png" alt="Manguera HDPE"><h3>Manguera HDPE</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+            </div>
+
+            <div id="grupo4" class="productos-grid hidden">
+                <div class="producto"><img src="../imagenes/actualizado/manguera_lona.png" alt="Manguera Lona"><h3>Manguera Lona</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Manometro_Liquido.jpg" alt="Manómetro"><h3>Manometro Liquido</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Marco_desague.png" alt="Marco Desague"><h3>Marco Desague</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Marco_tapa.png" alt="Marco Tapa"><h3>Marco y Tapa</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Marco_tapa_GDO.jpg" alt="Marco GDO"><h3>Marco Tapa GDO</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/marco_tapa_hierro_ductil.png" alt="Marco Hierro"><h3>Marco Hierro Ductil</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Mazo_de_Goma.jpg" alt="Mazo Goma"><h3>Mazo de Goma</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Medidor_de_Agua_Turbina.jpg" alt="Medidor Agua"><h3>Medidor de Agua</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Niple galvanizado.jpg" alt="Niple"><h3>Niple Galvanizado</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/pegamento_oatey_azul.png" alt="Pegamento Azul"><h3>Pegamento Oatey Azul</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/pegamento_oatey_dorado.png" alt="Pegamento Dorado"><h3>Pegamento Oatey Dorado</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Probetas_de_Concreto.jpg" alt="Probetas"><h3>Probetas de Concreto</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Probetas_pvc.jpg" alt="Probetas PVC"><h3>Probetas PVC</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+            </div>
+
+            <div id="grupo5" class="productos-grid hidden">
+                <div class="producto"><img src="../imagenes/actualizado/Reduccion Ca..jpg" alt="Reducción Ca"><h3>Reduccion Ca</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Reduccion campana galvanizada.jpg" alt="Reducción Campana"><h3>Reduccion Campana</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/reduccion_electrofusion.png" alt="Reducción Electro"><h3>Reduccion Electrofusion</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/reduccion_hdpe_termofusion.png" alt="Reducción HDPE"><h3>Reduccion HDPE Termo</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Registro_Dados.jpg" alt="Registro Dados"><h3>Registro Dados</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Registro_de_Sumidero.jpg" alt="Registro Sumidero"><h3>Registro Sumidero</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/rejilla_de_ventilacion.png" alt="Rejilla"><h3>Rejilla Ventilacion</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/rollo_manguera_de_succion.png" alt="Rollo Manguera"><h3>Rollo Manguera Succion</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/separador_concreto.png" alt="Separador"><h3>Separador Concreto</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/tapa_concreto.png" alt="Tapa Concreto"><h3>Tapa de Concreto</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Tapa_registro.jpg" alt="Tapa Registro"><h3>Tapa Registro</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Tapa_y_caja_modelo_comercial.png" alt="Tapa y Caja"><h3>Tapa y Caja Comercial</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Tapon macho.webp" alt="Tapón Macho"><h3>Tapon Macho</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/tapon_electrofusion.png" alt="Tapón Electro"><h3>Tapon Electrofusion</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+            </div>
+
+            <div id="grupo6" class="productos-grid hidden">
+                <div class="producto"><img src="../imagenes/actualizado/Tapon_HDPE.png" alt="Tapón HDPE"><h3>Tapon HDPE</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/tapon_hdpe_termofusion.png" alt="Tapón Termo"><h3>Tapon HDPE Termo</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Tee galvanizado.jpg" alt="Tee Galv"><h3>Tee Galvanizada</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/tee_electrofusion.png" alt="Tee Electro"><h3>Tee Electrofusion</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/tee_HDPE.png" alt="Tee HDPE"><h3>Tee HDPE</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/tee_hdpe_termofusion.png" alt="Tee Termo"><h3>Tee HDPE Termo</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/tee_PVC.jpg" alt="Tee PVC"><h3>Tee PVC</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Tuberias_aquaplas.webp" alt="Tuberias Aquaplas"><h3>Tuberias Aquaplas</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Tubo_alcantarillado.jpg" alt="Tubo Alcantarillado"><h3>Tubo Alcantarillado</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Tubo_de_abasto.jpg" alt="Tubo Abasto"><h3>Tubo de Abasto</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Tubo_rosca.png" alt="Tubo Rosca"><h3>Tubo Rosca</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/tubo_rosca_PVC.jpg" alt="Tubo Rosca PVC"><h3>Tubo Rosca PVC</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Tubo5m.jpg" alt="Tubo 5m"><h3>Tubo 5m</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/union_simple1_presion.jpg" alt="Unión Simple"><h3>Union Simple Galv</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+            </div>
+
+            <div id="grupo7" class="productos-grid hidden">
+                <div class="producto"><img src="../imagenes/actualizado/Union universal galvanizada.jpg" alt="Unión Universal"><h3>Union Galvanizado</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Union_blanco_PVC.jpg" alt="Unión Blanco"><h3>Union Blanco PVC</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Union_PVC.jpg" alt="Unión PVC"><h3>Union PVC</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/union_simple1_presion.jpg" alt="Unión Simple Presión"><h3>Union Simple Presion</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Union_universal.jpg" alt="Unión Universal"><h3>Union Universal</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/VALVULA_CANAS_YORK.png" alt="Válvula York"><h3>Valvula Canas York</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/VALVULA_CHECK_con_RESORTE.png" alt="Válvula Check"><h3>Valvula Check Resorte</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Valvula_Compuerta_acerrojada.jpg" alt="Válvula Acerrojada"><h3>Valvula Acerrojada</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Valvula_Compuerta_bridada_contra_Incendio.jpg" alt="Válvula Incendio"><h3>Valvula Contra Incendio</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Valvula_Compuerta_Cierre_Elástico_HD.jpg" alt="Válvula Elástica"><h3>Valvula Cierre Elastico</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Valvula_Compuerta_Embone_FF.png" alt="Válvula Embone"><h3>Valvula Embone FF</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Valvula_Compuerta_HD.jpg" alt="Válvula HD"><h3>Valvula Compuerta HD</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Valvula_Compuerta_Pesada.jpg" alt="Válvula Pesada"><h3>Valvula Pesada</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Valvula_de_Compuerta_Inoxidable.jpg" alt="Válvula Inox"><h3>Valvula Inoxidable</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+            </div>
+
+            <div id="grupo8" class="productos-grid hidden">
+                <div class="producto"><img src="../imagenes/actualizado/valvula_de_purga.png" alt="Válvula Purga"><h3>Valvula de Purga</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Valvula_Esferica_con_Rosca.jpg" alt="Válvula Rosca"><h3>Valvula Esferica Rosca</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Valvula_Esferica_de_Latón.png" alt="Válvula Latton"><h3>Valvula Esferica Laton</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Valvula_Esferica_Integral.png" alt="Válvula Integrada"><h3>Valvula Integrada</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Valvula_Esferica_Paso_Total.jpg" alt="Válvula Paso"><h3>Valvula Paso Total</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Valvula_Esferica_Rubistar.jpg" alt="Válvula Rubis"><h3>Valvula Esferica Rubis</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/valvula_flotadora.png" alt="Válvula Flotadora"><h3>Valvula Flotadora</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Valvula_hdpe.png" alt="Válvula HDPE"><h3>Valvula HDPE</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Valvula_Mariposa_Tipo_Wafer.jpg" alt="Válvula Mariposa"><h3>Valvula Mariposa Wafer</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Valvula_PVC1.jpg" alt="Válvula PVC"><h3>Valvula PVC</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Valvula_Reductor_de_Presión.png" alt="Válvula Reductora"><h3>Valvula Reductora</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Valvula_roja.jpg" alt="Válvula Roja"><h3>Valvula Roja</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Varilla_de_Desatoro.jpg" alt="Varilla Desatoro"><h3>Varilla de Desatoro</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Varilla_para_Probetas.jpg" alt="Varilla Probetas"><h3>Varilla para Probetas</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/water_stop_caucho.png" alt="Water Stop"><h3>Water Stop Caucho</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/yee_hdpe_termofusion.png" alt="Yee HDPE"><h3>Yee HDPE Termofusion</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                <div class="producto"><img src="../imagenes/actualizado/Yee_PVC.jpg" alt="Yee PVC"><h3>Yee PVC</h3><div class="acciones"><button class="btn-agregar">Cotizar</button></div></div>
+                
+                <div class="producto">
+                  <img src="../imagenes/actualizado/Yee-galvanizado.jpg" alt="Yee Galv">
+                  <h3>Yee Galvanizada</h3>
+                  <div class="acciones">
+                  <button class="btn-agregar">Agregar al Carrito</button>
+                  </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3 class="logo-footer">PRISMA STELL</h3>
+      <p class="slogan-footer">Marca exclusiva de válvulas y conexiones certificadas</p>
+    </div>
+    <div class="footer-col">
+      <h4>Productos</h4>
+      <ul>
+        <li><a href="#">Hierro Dúctil</a></li>
+        <li><a href="#">HDPE</a></li>
+        <li><a href="#">Bronce</a></li>
+        <li><a href="#">PVC</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><i class="fas fa-phone"></i> +51 984 191 444</li>
+        <li><i class="fas fa-envelope"></i> prismasteel47@gmail.com</li>
+        <li><i class="fas fa-map-marker-alt"></i> Psj 17 A15 - Lima</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Síguenos</h4>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=100095222694233&locale=es_LA"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100095596595639&locale=es_LA"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100095596595639&locale=es_LA"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2025 PRISMA STELL — RUC 20655550778  <li>DISEÑADO POR: aronvillanuevapalma7@gmail.com</li>
+  </div>
+</footer>
+  <aside class="carrito-panel" id="carritoPanel">
+    <div class="carrito-header">
+      <h3>Tu Carrito de Cotización</h3>
+      <button id="cerrarCarrito"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="carrito-contenido" id="carritoContenido">
+      <p class="carrito-vacio">Tu carrito está vacío.</p>
+    </div>
+    <div class="carrito-acciones">
+      <button class="btn-secundario" id="vaciarCarrito" disabled>Vaciar Carrito</button>
+      <button class="btn-whatsapp-panel" id="cotizarWhatsApp" disabled>
+        <i class="fab fa-whatsapp"></i> Cotizar
+      </button>
+    </div>
+  </aside>
+  <div class="carrito-overlay" id="carritoOverlay" aria-hidden="true"></div>
+
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="PRISMA STELL — Catálogo corporativo de válvulas, conexiones y accesorios hidráulicos." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRISMA STELL</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9k5Vv9XgQ0z/V0Bw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="top-item">
+        <i class="fas fa-credit-card"></i>
+        <div>
+            <strong>COMPRA FÁCIL</strong>
+            <small>CON TARJETA, YAPE O EFECTIVO</small>
+        </div>
+    </div>
+    
+    <div class="top-item">
+        <i class="fas fa-clock"></i>
+        <div>
+            <strong>HORARIO</strong>
+            <small>L-S: 08:30 AM - 7:00 PM</small>
+        </div>
+    </div>
+</div>
+
+<header class="navbar">
+    <div class="contenedor-navbar">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-text">PRISMA STELL</span>
+        </a>
+      </div>
+
+            <div class="buscador-central">
+                <input type="text" id="inputBuscador" placeholder="¿Qué estás buscando para tu proyecto?">
+                <button class="btn-buscar">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+      <div class="acciones-barra">
+        <button class="btn-carrito" id="btnCarrito" aria-label="Abrir Carrito de Cotización">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge" id="carritoBadge">0</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav-principal">
+      <ul class="menu-rediseñado">
+      <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="historia/nosotros.html">Nosotros</a></li>
+        <li class="dropdown">
+          <a href="#"><i class="fas fa-boxes"></i> Productos</a>
+          <ul class="submenu">
+            <li><a href="extencion/Valvulas_Accesorios_hidraulica.html">Válvulas y Accesorios Hidráulicos</a></li>
+            <li><a href="extencion/tuberia_PVC.html">Accesorios de Tubería y PVC</a></li>
+            <li><a href="extencion/herr_complementos.html">Herramientas y Complemento</a></li>
+            <li class="dropdown-sub">
+              <a href="#">Conexiones <i class="fas fa-chevron-right"></i></a>
+              <ul class="submenu-right">
+                <li><a href="extencion/conex_galvanizado.html">Conexiones Galvanizadas</a></li>
+                <li><a href="extencion/conex_PVC.html">Conexiones de PVC</a></li>
+                <li><a href="extencion/conex_bronce.html">Conexiones de Bronce</a></li>
+                <li><a href="extencion/conexion_hdpe.html">Conexiones HDPE</a></li>
+              </ul>
+            </li>
+            <li><a href="extencion/uniones.html">Uniones</a></li>
+            <li><a href="extencion/bridas.html">Bridas</a></li>
+            <li><a href="extencion/marco_tapa.html">Marcos y Tapas</a></li>
+            <li><a href="extencion/caneria.html">Cañeria</a></li>
+            <li><a href="extencion/catalogo.html">catalogo</a></li>
+          </ul>
+        </li>
+        <li><a href="extencion/catalogo.html">Catalogo</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+<section class="hero" id="heroSlider">
+    <div class="hero-slides">
+            
+      <div class="slide">
+        <img src="imagenes/fondo_bronce.png" alt="Banner principal 1: Conexiones de Bronce">
+        <div class="hero-caption">
+          <h1>Soluciones en Conexiones de Bronce</h1>
+          <p>La mejor calidad para instalaciones duraderas y fiables.</p>
+          <a href="" class="btn-primary">Ver Productos</a>
+        </div>
+      </div>
+
+            <div class="slide active">
+        <img src="imagenes/carrucel valvula.png" alt="Banner principal 2: Válvulas y Accesorios">
+        <div class="hero-caption">
+         <h1>LÍNEA PREMIUM EN VÁLVULAS INDUSTRIALES</h1>
+                    <p>La máxima calidad para el control de fluidos en entornos exigentes. Contamos con certificaciones internacionales.</p>
+          <a href="extencion/Valvulas_Accesorios_hidraulica.html" class="btn-primary">Ver Válvulas</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="imagenes/fondo_balde.png" alt="Banner principal 3: Balde de Prueba hidrahulica">
+        <div class="hero-caption">
+         <h1>CONEXIONES HIDRÁULICAS DE ALTA PRECISIÓN</h1>
+         <p>Rendimiento superior y seguridad en cada acoplamiento para tus proyectos de distribución de agua.</p>
+        </div>
+      </div>
+      
+      <div class="slide">
+        <img src="imagenes/fondddddo.png" alt="Banner principal 4: tapa de buzon de concreto, tapa de fierro">
+        <div class="hero-caption">
+          <h1>SOLUCIONES ROBUSTAS PARA CONSTRUCCIÓN</h1>
+          <p>Marcos y tapas de concreto y fierro fundido para infraestructura urbana y carretera. Máxima resistencia a la carga.</p>
+          <a href="" class="btn-primary">Ver Productos</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="imagenes/fondo_PVC.png" alt="Banner principal 5: Tuberías y Accesorios PVC">
+        <div class="hero-caption">
+          <h1>ACCESORIOS Y TUBERÍAS PARA RIEGO TECNIFICADO</h1>
+          <p>Optimiza tu sistema de riego con nuestros productos de alta durabilidad, eficiencia y resistencia UV.</p>
+          <a href="extencion/tuberia_PVC.html " class="btn-primary">Ver Productos</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero-controls">
+      <button class="hero-arrow prev" aria-label="Diapositiva anterior"><i class="fas fa-chevron-left"></i></button>
+      <button class="hero-arrow next" aria-label="Siguiente diapositiva"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="hero-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+<main>
+  <h2 class="titulo-main">PRODUCTOS DESTACADOS</h2>
+  
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev" aria-label="Producto anterior">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <div class="carousel-track" id="track1">
+      <div class="producto " data-categoria="valvulas" data-id="P001" data-nombre="Niple galbanizado">
+        <img src="imagenes/actualizado/Niple galvanizado.jpg" alt="Niple">
+        <h3>Niple Galvanizado</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P001">Agregar al Carrito</button>
+        </div>
+      </div>
+    
+
+      <div class="producto tarjeta" data-categoria="valvulas" data-id="P002" data-nombre="Union simple Galvanizado">
+        <img src="imagenes/actualizado/Union simple galvanizado.jpg" alt="Unión Simple">
+        <h3>Unión Simple Galvanizado</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P002">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="producto tarjeta" data-categoria="galvanizado" data-id="P003" data-nombre="codo galvanizado">
+        <img src="imagenes/actualizado/Codo galvanizado.jpg" alt="Codo Galvanizado">
+        <h3>Codo Galvanizado</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P003">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="producto tarjeta" data-categoria="valvulas" data-id="P004" data-nombre="Válvula Esférica de Latón">
+        <img src="imagenes/actualizado/Valvula_Esferica_de_Latón.png" alt="Válvula esférica de latón">
+        <h3>Válvula Esférica de Latón</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P004">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="producto tarjeta" data-categoria="Galvanizadas" data-id="P004" data-nombre="Bushing galvanizado">
+        <img src="imagenes/actualizado/Bushing galvanizado.jpg" alt="Bushing galvanizado">
+        <h3>Bushing Galvanizadas</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P004">Agregar al Carrito</button>
+        </div>
+      </div> 
+
+      <div class="producto tarjeta" data-categoria="pvc" data-id="P005" data-nombre="Valvula compuerta">
+        <img src="imagenes/actualizado/Valvula_Compuerta_bridada_contra_Incendio.jpg" alt="Válvula compuerta bridada contra incendio">
+        <h3>Válvula Compuerta Bridada Contra Incendio</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P005">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="producto tarjeta" data-categoria="herramientas" data-id="P006" data-nombre="Varilla de Desatoro">
+        <img src="imagenes/actualizado/Varilla_de_Desatoro.jpg" alt="Varilla de desatoro">
+        <h3>Varilla de Desatoro</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P006">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="producto tarjeta" data-categoria="pvc" data-id="P007" data-nombre="Medidor de Agua turbina">
+        <img src="imagenes/actualizado/Medidor_de_Agua_Turbina.jpg" alt="Medidor de agua turbina">
+        <h3>Medidor de Agua</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P007">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="producto tarjeta" data-categoria="valvulas" data-id="P008" data-nombre="Válvula Mariposa Tipo Wafer">
+        <img src="imagenes/actualizado/Valvula_Mariposa_Tipo_Wafer.jpg" alt="Válvula mariposa tipo wafer">
+        <h3>Válvula Mariposa Tipo Wafer</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P008">Agregar al Carrito</button>
+        </div>
+      </div>
+      <div class="producto tarjeta" data-categoria="hdpe" data-id="P003" data-nombre="Adaptador de Brida Rápida para Tubería HDPE">
+        <img src="imagenes/actualizado/Adaptador_de_brida_rápida_para_tubería_de_hdpe.jpg" alt="Adaptador de brida rápida HDPE">
+        <h3>Adaptador de Brida Rápida para Tubería HDPE</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P009">Agregar al Carrito</button>
+        </div>
+      </div>
+    <div class="producto tarjeta" data-categoria="valvula" data-id="P0010" data-nombre="Hidrante Contra Incendio">
+        <img src="imagenes/actualizado/hidrante_contra_incendio.png" alt="Hidrante Contra Incendio">
+        <h3>Hidrante Contra Incendio</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P0010">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="producto tarjeta" data-categoria="extintor" data-id="P0011" data-nombre="Extintor">
+        <img src="imagenes/actualizado/extintor.png" alt="Extintor">
+        <h3>Extintor Contra Incendio</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P0011">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="producto tarjeta" data-categoria="Caucho" data-id="P0012" data-nombre="Water Stop Caucho">
+        <img src="imagenes/actualizado/water_stop_caucho.png" alt="Water stop Caucho">
+        <h3>Water Stop Caucho</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P0012">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="producto tarjeta" data-categoria="Galvanizado" data-id="P0012" data-nombre="Tee galvanizado">
+        <img src="imagenes/actualizado/Tee galvanizado.jpg" alt="Tee galvanizado">
+        <h3>Tee Galvanizado</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P0014">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="producto tarjeta" data-categoria="Galvanizado" data-id="P0012" data-nombre="Tee galvanizado">
+        <img src="imagenes/actualizado/Cruz galvanizado.jpg" alt="Cruz galvanizado">
+        <h3>Cruz Galvanizado</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P0014">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="producto tarjeta" data-categoria="valvula" data-id="P0013" data-nombre="Valvula Flotadora">
+        <img src="imagenes/actualizado/valvula_flotadora.png" alt="Valvula Flotadora">
+        <h3>Valvula Flotadora</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P0013">Agregar al Carrito</button>
+        </div>
+    </div>
+  </div>
+    <button class="carousel-btn next" aria-label="Siguiente producto">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <h2 class="titulo-main">MARCOS, TAPAS Y HERRAMIENTAS</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev" aria-label="Producto anterior">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <div class="carousel-track" id="track2">
+      <div class="producto tarjeta" data-categoria="marcos" data-id="P101" data-nombre="Marco Tapa GDO">
+        <img src="imagenes/actualizado/Marco_tapa_GDO.jpg" alt="Marco tapa GDO">
+        <h3>Marco Tapa GDO</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P101">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="producto tarjeta" data-categoria="marcos" data-id="P102" data-nombre="Tapa de Registro">
+        <img src="imagenes/actualizado/Tapa_registro.jpg" alt="Tapa registro">
+        <h3>Tapa de Registro</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P102">Agregar al Carrito</button>
+        </div>
+      </div>
+      <div class="producto tarjeta" data-categoria="herramientas" data-id="P103" data-nombre="Kits para Varilla de Desatoro">
+        <img src="imagenes/actualizado/Kits_para_Varilla_para_Desatoro.jpg" alt="Kits para varilla de desatoro">
+        <h3>Kits para Varilla de Desatoro</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P103">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="producto tarjeta" data-categoria="herramientas" data-id="P104" data-nombre="Mazo de Goma">
+        <img src="imagenes/actualizado/Mazo_de_Goma.jpg" alt="Mazo de goma">
+        <h3>Mazo de Goma</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P104">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="producto tarjeta" data-categoria="marcos" data-id="P105" data-nombre="Marco y Tapa Termoplastico">
+        <img src="imagenes/actualizado/Marco_tapa.png" alt="Tapa registro">
+        <h3>Marco y Tapa Termoplastico</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P105">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="producto tarjeta" data-categoria="herramientas" data-id="P106" data-nombre="Tapa y caja modelo comercial">
+        <img src="imagenes/actualizado/Tapa_y_caja_modelo_comercial.png" alt="Tapa y caja modelo comercial">
+        <h3>Tapa y Caja Modelo Comercial</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P106">Agregar al Carrito</button>
+        </div>
+      </div>
+      <div class="producto tarjeta" data-categoria="marcos" data-id="P107" data-nombre="Cuchara para Concreto">
+        <img src="imagenes/actualizado/Cuchara_para_Concreto.jpg" alt="Cuchara para Concreto">
+        <h3>Cuchara para Concreto</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P107">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="producto tarjeta" data-categoria="herramientas" data-id="P108" data-nombre="Kits para Varilla de Desatoro">
+        <img src="imagenes/actualizado/Kits_para_Varilla_para_Desatoro.jpg" alt="Kits para varilla de desatoro">
+        <h3>Kits para Varilla de Desatoro</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P108">Agregar al Carrito</button>
+        </div>
+      </div>
+    <div class="producto tarjeta" data-categoria="Tapa" data-id="P109" data-nombre="Tapa de Concreto">
+        <img src="imagenes/actualizado/tapa_concreto.png" alt="Tapa de concreto">
+        <h3>Tapa de Concreto</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P109">Agregar al Carrito</button>
+        </div>
+      </div>   
+      <div class="producto tarjeta" data-categoria="marcos" data-id="P1010" data-nombre="Rejilla de Ventilacion">
+        <img src="imagenes/actualizado/rejilla_de_ventilacion.png" alt="rejilla de ventilacion">
+        <h3>Rejilla de Ventilacion</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P1010">Agregar al Carrito</button>
+        </div>
+      </div>
+      <div class="producto tarjeta" data-categoria="manguera" data-id="P1011" data-nombre="Manguera HDPE">
+        <img src="imagenes/actualizado/manguera_hdpe_polietileno.png" alt="Manguera HDPE">
+        <h3>Manguera HDPE Polietileno</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P1011">Agregar al Carrito</button>
+        </div>
+      </div>
+      <div class="producto tarjeta" data-categoria="manguera" data-id="P1012" data-nombre="Rollo de manguera de succion">
+        <img src="imagenes/actualizado/rollo_manguera_de_succion.png" alt="Manguera de succion">
+        <h3>Manguera de Succion</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P1012">Agregar al Carrito</button>
+        </div>
+      </div>
+      <div class="producto tarjeta" data-categoria="manguera" data-id="P1013" data-nombre="Manguera Lona">
+        <img src="imagenes/actualizado/manguera_lona.png" alt="Manguera lona">
+        <h3>Manguera Lona</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P1013">Agregar al Carrito</button>
+        </div>
+      </div>
+      <div class="producto tarjeta" data-categoria="marco" data-id="P1014" data-nombre="Marco de hierro">
+        <img src="imagenes/actualizado/marco_tapa_hierro_ductil.png" alt="Marco de hierro">
+        <h3>Marco de Hierro</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P1014">Agregar al Carrito</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn next" aria-label="Siguiente producto">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <h2 class="titulo-main">NUEVOS INGRESOS</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev" aria-label="Producto anterior">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <div class="carousel-track" id="track3">
+      <div class="producto tarjeta" data-categoria="bomba Electrica" data-id="N001" data-nombre="Bomba Eléctrica DSY-60">
+        <img src="imagenes/actualizado/dsy-60.png" alt="Bomba Eléctrica DSY-60">
+        <h3>Bomba Electrica DSY-25</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="N001">Agregar al Carrito</button>
+        </div>
+      </div>
+      <div class="producto tarjeta" data-categoria="pvc" data-id="N002" data-nombre="Bomba Eléctrica DSY-25">
+        <img src="imagenes/actualizado/dsy-25.png" alt="ALVULA CANAS YORK">
+        <h3>Bomba Electrica DSY-25</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="N002">Agregar al Carrito</button>
+        </div>
+      </div>
+      <div class="producto tarjeta" data-categoria="hdpe" data-id="N003" data-nombre="bomba Manual">
+        <img src="imagenes/actualizado/manual.png" alt="Bomba Manual HSY-40x">
+        <h3>Bomba Manual HSY-40x</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="N003">Agregar al Carrito</button>
+        </div>
+      </div>
+      <div class="producto tarjeta" data-categoria="medidor" data-id="N004" data-nombre="Medidor de Agua Turbina">
+        <img src="imagenes/actualizado/Medidor_de_Agua_Turbina.jpg" alt="Medidor de Agua Turbina">
+        <h3>Medidor de Agua Turbina</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="N004">Agregar al Carrito</button>
+        </div>
+      </div>
+      <div class="producto tarjeta" data-categoria="Valvula Compuerta Pesada" data-id="N005" data-nombre="Valvula Compuerta Pesada">
+        <img src="imagenes/actualizado/Valvula_Compuerta_Pesada.jpg" alt="Valvula Compuerta Pesada">
+        <h3>Valvula Compuerta Pesada</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="N005">Agregar al Carrito</button>
+        </div>
+      </div>
+      <div class="producto tarjeta" data-categoria="hdpe" data-id="N006" data-nombre="Acoples de Alta Presión">
+        <img src="imagenes/actualizado/Acoples_de_alta_presión.jpg" alt="Acoples de Alta Presión">
+        <h3>Acoples de Alta Presión</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="N006">Agregar al Carrito</button>
+        </div>
+      </div>
+      <div class="producto tarjeta" data-categoria="Hidrante Contra Incendio" data-id="N007" data-nombre="Hidrante Contra Incendio">
+        <img src="imagenes/actualizado/hidrante_contra_incendio.png" alt="Hidrante Contra Incendio">
+        <h3>Hidrante Contra Incendio</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="N007">Agregar al Carrito</button>
+        </div>
+      </div>
+      <div class="producto tarjeta" data-categoria="brida" data-id="N008" data-nombre="Brida">
+        <img src="imagenes/actualizado/brida.png" alt="Brida">
+        <h3>Brida</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="N008">Agregar al Carrito</button>
+        </div>
+      </div>
+      <div class="producto tarjeta" data-categoria="Valvula de Purga" data-id="N009" data-nombre="Valvula de Purga">
+        <img src="imagenes/actualizado/valvula_de_purga.png" alt="Valvula de Purga">
+        <h3>Valvula de Purga</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="N009">Agregar al Carrito</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn next" aria-label="Siguiente producto">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+  
+  <h2 class="titulo-main">CAÑERÍAS</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev" aria-label="Caño anterior">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <div class="carousel-track" id="track3_caneria"> <div class="producto tarjeta" data-id="P_CAÑO01" data-nombre="Caño Bronce Pesado"> 
+        <img src="imagenes/actualizado/CAÑ_BRONCE PESADO.png" alt="Caño Bronce Pesado"> 
+        <h3>Caño Bronce Pesado</h3> 
+        <div class="acciones"> 
+          <button class="btn-agregar" data-id="P_CAÑO01">Agregar al Carrito</button> 
+        </div> 
+      </div>
+      <div class="producto tarjeta" data-id="P_CAÑO02" data-nombre="Caño Mango Amarillo"> 
+        <img src="imagenes/actualizado/CAÑ_MANGO_AMARI.png" alt="Caño Mango Amarillo"> 
+        <h3>Caño Mango Amarillo</h3> 
+        <div class="acciones"> 
+          <button class="btn-agregar" data-id="P_CAÑO02">Agregar al Carrito</button> 
+        </div> 
+      </div>
+      
+      <div class="producto tarjeta" data-id="P_CAÑO03" data-nombre="Caño Doble Entrada"> 
+        <img src="imagenes/actualizado/CAÑO_DOBLE_ENTRADA.png" alt="Caño Doble Entrada"> 
+        <h3>Caño Doble Entrada</h3> 
+        <div class="acciones"> 
+          <button class="btn-agregar" data-id="P_CAÑO03">Agregar al Carrito</button> 
+        </div> 
+      </div>
+      
+      <div class="producto tarjeta" data-id="P_CAÑO04" data-nombre="Caño Botadero Liso Cromado"> 
+        <img src="imagenes/actualizado/CAÑO_BOTADERO_LISO_CROMADO.png" alt="Caño Botadero Liso Cromado"> 
+        <h3>Caño Botadero Liso Cromado</h3> 
+        <div class="acciones"> 
+          <button class="btn-agregar" data-id="P_CAÑO04">Agregar al Carrito</button> 
+        </div> 
+      </div>
+      
+      <div class="producto tarjeta" data-id="P_CAÑO05" data-nombre="Caño de Jardinería"> 
+        <img src="imagenes/actualizado/CAÑO_JARDINERIA.png" alt="Caño Jardinería"> 
+        <h3>Caño de Jardinería</h3> 
+        <div class="acciones"> 
+          <button class="btn-agregar" data-id="P_CAÑO05">Agregar al Carrito</button> 
+        </div> 
+      </div>
+      
+      <div class="producto tarjeta" data-id="P_CAÑO06" data-nombre="Caño Esférico Rubistar"> 
+        <img src="imagenes/actualizado/Caño_Esferica_Rubistar.jpg" alt="Caño Esférica Rubistar"> 
+        <h3>Caño Esférico Rubistar</h3> 
+        <div class="acciones"> 
+          <button class="btn-agregar" data-id="P_CAÑO06">Agregar al Carrito</button> 
+        </div> 
+      </div>
+      
+      <div class="producto tarjeta" data-id="P_CAÑO07" data-nombre="Caño Rosca"> 
+        <img src="imagenes/actualizado/CAÑO_ROSCA.png" alt="Caño Rosca"> 
+        <h3>Caño Rosca</h3> 
+        <div class="acciones"> 
+          <button class="btn-agregar" data-id="P_CAÑO07">Agregar al Carrito</button> 
+        </div> 
+      </div>
+      
+      <div class="producto tarjeta" data-id="P_CAÑO08" data-nombre="Caño PVC"> 
+        <img src="imagenes/actualizado/CAÑO_PVC.png" alt="Caño PVC"> 
+        <h3>Caño PVC</h3> 
+        <div class="acciones"> 
+          <button class="btn-agregar" data-id="P_CAÑO08">Agregar al Carrito</button> 
+        </div> 
+      </div>
+    </div>
+    <button class="carousel-btn next" aria-label="Caño siguiente">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <h2 class="titulo-main">MAS PRODUCTOS</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev" aria-label="Válvula anterior">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <div class="carousel-track" id="track4">
+      
+      <div class="producto tarjeta" data-id="P_ABC01" data-nombre="Teflon Roja">
+        <img src="imagenes/actualizado/cinta_teflon-roja.png" alt="Teflon roja">
+        <h3>Cinta Teflon Roja</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P_ABC01">Agregar al Carrito</button>
+        </div>
+      </div>
+      <div class="producto tarjeta" data-id="P_ABC02" data-nombre="Pegamento Oatey">
+        <img src="imagenes/actualizado/pegamento_oatey_azul.png" alt="Pegamento Oatey Azul">
+        <h3>Pegamento Oatey Azul</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P_ABC02">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="producto tarjeta" data-id="P_ABC03" data-nombre="Pegamento Oatey Dorado">
+        <img src="imagenes/actualizado/pegamento_oatey_dorado.png" alt="Pegamento Oatey Dorado">
+        <h3>Pegamento Oatey Dorado</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P_ABC03">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="producto tarjeta" data-id="P_ABC04" data-nombre="Teflon Amarillo">
+        <img src="imagenes/actualizado/cinta_teflon_amarilla.png" alt="Teflon Amarillo">
+        <h3>Cinta Teflon Amarillo</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P_ABC04">Agregar al Carrito</button>
+        </div>
+      </div>
+      
+      <div class="producto tarjeta" data-id="P_ABC05" data-nombre="Separador de concreto">
+        <img src="imagenes/actualizado/separador_concreto.png" alt="Separador de concreto">
+        <h3>Separador de Concreto</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P_ABC05">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="producto tarjeta" data-id="P_ABC06" data-nombre="Empaquetadura Neopreno">
+        <img src="imagenes/actualizado/empaquetadura_neopreno.png" alt="Empaquetadura Neopreno">
+        <h3>Empaquetadura Neopreno</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P_ABC06">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="producto tarjeta" data-id="P_VALVULA03" data-nombre="Válvula Botadero Bronce">
+        <img src="imagenes/actualizado/Valvula_roja.jpg" alt="Válvula Botadero Liso Bronce">
+        <h3>Válvula</h3>
+        <div class="acciones">
+          <button class="btn-agregar" data-id="P_VALVULA03">Agregar al Carrito</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn next" aria-label="Válvula siguiente">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+</main>
+
+<section class="beneficios">
+  <div class="beneficio-card"><i class="fas fa-truck"></i><h3>Envíos Nacionales</h3><p>A todo el Perú.</p></div>
+  <div class="beneficio-card"><i class="fas fa-clipboard-check"></i><h3>Calidad Garantizada</h3><p>Certificados y originales.</p></div>
+  <div class="beneficio-card"><i class="fas fa-tags"></i><h3>Precios Competitivos</h3><p>Importadores directos.</p></div>
+  <div class="beneficio-card"><i class="fas fa-boxes-stacked"></i><h3>Amplio Stock</h3><p>Entrega inmediata.</p></div>
+</section>
+<section class="visor-productos-section">
+    <div class="visor-container">
+        <div class="visor-header">
+            <h2>Bombas de Prueba Hidráulicas</h2>
+            <p>Selecciona un modelo para ver sus características técnicas</p>
+        </div>
+
+        <div class="visor-body">
+            <div class="visor-menu">
+                <button class="visor-btn active" onclick="cambiarBomba(0)">
+                    <i class="fas fa-bolt"></i> Bomba Electrica DSY-60
+                </button>
+                <button class="visor-btn" onclick="cambiarBomba(1)">
+                    <i class="fas fa-bolt"></i> Bomba Electrica DSY-25
+                </button>
+                <button class="visor-btn" onclick="cambiarBomba(2)">
+                    <i class="fas fa-hand-holding-water"></i> Bomba Manual HSY-40x
+                </button>
+                <button class="visor-btn" onclick="cambiarBomba(3)">
+                    <i class="fas fa-hand-holding-water"></i> Balde de Pruebra
+                </button>
+            </div>
+
+            <div class="visor-display">
+                <div class="visor-img-wrap">
+                    <img id="bomba-img-grande" src="imagenes/actualizado/bomba_dsy_60.jpeg" alt="Bomba Seleccionada" class="fade-in">
+                </div>
+                
+                <div class="visor-info">
+                    <h3 id="bomba-titulo">Bomba Eléctrica DSY-60</h3>
+                    <p id="bomba-desc">La bomba de pruebas hidrostáticas DSY 60 se utiliza para comprobar la resistencia y estanqueidad de sistemas hidráulicos y tuberías, principalmente en los sectores de construcción e industria. Está diseñada para trabajar en condiciones de alta presión</p>
+                    
+                    <ul class="bomba-specs" id="bomba-specs">
+                        <li><i class="fas fa-check"></i> Presión Máxima: 0-860 PSI</li>
+                        <li><i class="fas fa-check"></i> Accionamiento: Eléctrico 250w</li>
+                        <li><i class="fas fa-check"></i> Uso: Industrial / Pesado</li>
+                        <li><i class="fas fa-check"></i> Peso: 12 Kg</li>
+                    </ul>
+
+                    <div class="acciones">
+                        <button class="btn-cotizar-grande" onclick="cotizarProductoActual()">
+                            <i class="fas fa-shopping-cart"></i> Cotizar Ahora
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="whatsapp-flotante">
+    
+    <div id="whatsapp-popup" class="whatsapp-popup-content">
+        <div class="whatsapp-header">
+            <p>Iniciar una conversación</p>
+            <p class="whatsapp-subtext">¡Hola! Haz clic en uno de nuestros miembros a continuación para chatear por WhatsApp.</p>
+        </div>
+        <div class="whatsapp-note">
+            El equipo normalmente responde en unos minutos.
+        </div>
+        
+        <a href="https://wa.me/XXXXXXXXX?text=Hola%2C%20quisiera%20información%20sobre%20sus%20productos%20(Ventas%201)" target="_blank" class="whatsapp-contacto">
+            <div class="contacto-icon-wrapper">
+                <span>👤</span> 
+            </div>
+            <div class="contacto-details">
+                <strong>Ventas 1</strong>
+            </div>
+            <div class="contacto-chat-icon"><i class="fab fa-whatsapp"></i></div>
+        </a>
+
+        <a href="https://wa.me/YYYYYYYYY?text=Hola%2C%20quisiera%20información%20sobre%20sus%20productos%20(Ventas%202)" target="_blank" class="whatsapp-contacto">
+            <div class="contacto-icon-wrapper">
+                <span>👤</span> 
+            </div>
+            <div class="contacto-details">
+                <strong>Ventas 2</strong>
+            </div>
+            <div class="contacto-chat-icon"><i class="fab fa-whatsapp"></i></div>
+        </a>
+    </div>
+
+    <button id="whatsapp-btn" class="whatsapp-icon-btn" aria-label="Iniciar chat de WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3 class="logo-footer">PRISMA STELL</h3>
+      <p class="slogan-footer">Marca exclusiva de válvulas y conexiones certificadas</p>
+    </div>
+    <div class="footer-col">
+      <h4>Productos</h4>
+      <ul>
+        <li><a href="#">Hierro Dúctil</a></li>
+        <li><a href="#">HDPE</a></li>
+        <li><a href="#">Bronce</a></li>
+        <li><a href="#">PVC</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><i class="fas fa-phone"></i> +51 984 191 444</li>
+        <li><i class="fas fa-envelope"></i> prismasteel47@gmail.com</li>
+        <li><i class="fas fa-map-marker-alt"></i> Psj 17 A15 - Lima</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Síguenos</h4>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=100095222694233&locale=es_LA"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100095596595639&locale=es_LA"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100095596595639&locale=es_LA"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2025 PRISMA STELL — RUC 20655550778  <li>DISEÑADO POR: aronvillanuevapalma7@gmail.com</li>
+  </div>
+</footer>
+
+<aside class="carrito-panel" id="carritoPanel" aria-hidden="true">
+    <div class="carrito-header">
+      <h3>Tu Carrito de Cotización</h3>
+      <button id="cerrarCarrito" aria-label="Cerrar Carrito"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="carrito-contenido" id="carritoContenido">
+      <p class="carrito-vacio">Tu carrito está vacío.</p>
+    </div>
+    <div class="carrito-acciones">
+      <button class="btn-secundario" id="vaciarCarrito" disabled>Vaciar Carrito</button>
+      <button class="btn-whatsapp-panel" id="cotizarWhatsApp" disabled>
+        <i class="fab fa-whatsapp"></i> Cotizar
+      </button>
+    </div>
+  </aside>
+  <div class="carrito-overlay" id="carritoOverlay" aria-hidden="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

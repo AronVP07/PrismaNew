@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="PRISMA STELL — Catálogo corporativo de válvulas, conexiones y accesorios hidráulicos." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRISMA STELL</title>
+  <link rel="stylesheet" href="../extencion/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9k5Vv9XgQ0z/V0Bw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="top-item">
+        <i class="fas fa-credit-card"></i>
+        <div>
+            <strong>COMPRA FÁCIL</strong>
+            <small>CON TARJETA, YAPE O EFECTIVO</small>
+        </div>
+    </div>
+    
+    <div class="top-item">
+        <i class="fas fa-clock"></i>
+        <div>
+            <strong>HORARIO</strong>
+            <small>L-S: 08:30 AM - 7:00 PM</small>
+        </div>
+    </div>
+</div>
+
+<header class="navbar">
+    <div class="contenedor-navbar">
+      <div class="logo">
+        <a href="../index.html">
+          <span class="logo-text">PRISMA STELL</span>
+        </a>
+      </div>
+
+            <div class="buscador-central">
+                <input type="text" id="inputBuscador" placeholder="¿Qué estás buscando para tu proyecto?">
+                <button class="btn-buscar">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+      <div class="acciones-barra">
+        <button class="btn-carrito" id="btnCarrito" aria-label="Abrir Carrito de Cotización">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge" id="carritoBadge">0</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav-principal">
+      <ul class="menu-rediseñado">
+      <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../historia/nosotros.html" class="active">Nosotros</a></li>
+        <li class="dropdown">
+          <a href="#"><i class="fas fa-boxes"></i> Productos</a>
+          <ul class="submenu">
+            <li><a href="../extencion/Valvulas_Accesorios_hidraulica.html">Válvulas y Accesorios Hidráulicos</a></li>
+            <li><a href="../extencion/tuberia_PVC.html">Accesorios de Tubería y PVC</a></li>
+            <li><a href="../extencion/herr_complementos.html">Herramientas y Complemento</a></li>
+            <li class="dropdown-sub">
+              <a href="#">Conexiones <i class="fas fa-chevron-right"></i></a>
+              <ul class="submenu-right">
+                <li><a href="../extencion/conex_galvanizado.html">Conexiones Galvanizadas</a></li>
+                <li><a href="../extencion/conex_PVC.html">Conexiones de PVC</a></li>
+                <li><a href="../extencion/conex_bronce.html">Conexiones de Bronce</a></li>
+                <li><a href="../extencion/conexion_hdpe.html">Conexiones HDPE</a></li>
+              </ul>
+            </li>
+            <li><a href="../extencion/uniones.html">Uniones</a></li>
+            <li><a href="../extencion/bridas.html">Bridas</a></li>
+            <li><a href="../extencion/marco_tapa.html">Marcos y Tapas</a></li>
+            <li><a href="../extencion/caneria.html">Cañeria</a></li>
+            <li><a href="../extencion/catalogo.html">Catalogo</a></li>
+          </ul>
+        </li>
+        <li><a href="../extencion/catalogo.html">Catalogo</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+
+    <header class="nosotros-hero" style="background-image: url('../imagenes/actualizado/icono_nosotros.png');">
+     <div class="hero-overlay">
+        <div class="hero-content">
+            <span class="badge-hero">PRISMA STELL</span>
+            <h1>Ingeniería y Confianza <br> en cada conexión</h1>
+            <p>Somos el aliado estratégico que la industria peruana necesita. Calidad, precisión y stock suficiente.</p>
+        </div>
+     </div>
+    </header>
+
+    <section class="seccion-interactiva">
+        <div class="container">
+            
+            <div class="tabs-nav">
+                <button class="tab-btn active" onclick="cambiarPestana(event, 'mision')">
+                    <i class="fas fa-bullseye"></i> Misión
+                </button>
+                <button class="tab-btn" onclick="cambiarPestana(event, 'vision')">
+                    <i class="fas fa-eye"></i> Visión
+                </button>
+                <button class="tab-btn" onclick="cambiarPestana(event, 'valores')">
+                    <i class="fas fa-gem"></i> Valores
+                </button>
+            </div>
+
+            <div class="tabs-body">
+                
+                <div id="mision" class="tab-content active">
+                    <div class="tab-text">
+                        <h2>Nuestra razón de ser</h2>
+                        <p>En <strong>PRISMA STELL EIRL</strong>, nuestra trayectoria nos avala. Con más de una década y media de experiencia en el mercado, nos hemos consolidado como el socio estratégico para el suministro de válvulas, conexiones y equipos de prueba hidrostática. No somos improvisados; entendemos a la perfección los desafíos críticos de la minería y la construcción. Nuestra propuesta combina un stock robusto, certificación técnica internacional y el respaldo de un equipo que lleva 15 años resolviendo las urgencias más complejas del sector. Garantizamos calidad, precisión y la tranquilidad de trabajar con expertos.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="../imagenes/actualizado/icono_nosotros_balde.png" alt="Misión de la empresa">
+                        <div class="floating-box">
+                            <i class="fas fa-star"></i> Calidad Garantizada
+                        </div>
+                    </div>
+                </div>
+
+                <div id="vision" class="tab-content">
+                    <div class="tab-text">
+                        <h2>Hacia donde vamos</h2>
+                        <p>Aspiramos a consolidarnos para el año 2030 como la empresa referente en el sector de fluidos industriales en Perú. Buscamos ser reconocidos por nuestra capacidad de innovación tecnológica y por elevar los estándares de seguridad en la industria.</p>
+                        <p>Queremos construir un futuro donde cada tubería instalada sea sinónimo de seguridad y eficiencia.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="../imagenes/actualizado/icono_nosotros.png" alt="Visión a futuro">
+                    </div>
+                </div>
+
+                <div id="valores" class="tab-content">
+                    <div class="tab-text">
+                        <h2>Nuestros Pilares</h2>
+                        <div class="valores-grid">
+                            <div class="valor-card">
+                                <i class="fas fa-handshake"></i>
+                                <h3>Integridad</h3>
+                                <p>Transparencia absoluta en precios y calidades.</p>
+                            </div>
+                            <div class="valor-card">
+                                <i class="fas fa-clock"></i>
+                                <h3>Compromiso</h3>
+                                <p>Tu urgencia es nuestra prioridad.</p>
+                            </div>
+                            <div class="valor-card">
+                                <i class="fas fa-medal"></i>
+                                <h3>Excelencia</h3>
+                                <p>No aceptamos menos que lo mejor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-image">
+                        <img src="../imagenes/actualizado/icono_valores.png" alt="Nuestros valores">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stat-box">
+            <span class="stat-number">+15</span>
+            <span class="stat-label">Años de Experiencia</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-number">+5k</span>
+            <span class="stat-label">Productos en Stock</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Clientes Satisfechos</span>
+        </div>
+    </section>
+
+    
+<div class="whatsapp-flotante">
+    
+    <div id="whatsapp-popup" class="whatsapp-popup-content">
+        <div class="whatsapp-header">
+            <p>Iniciar una conversación</p>
+            <p class="whatsapp-subtext">¡Hola! Haz clic en uno de nuestros miembros a continuación para chatear por WhatsApp.</p>
+        </div>
+        <div class="whatsapp-note">
+            El equipo normalmente responde en unos minutos.
+        </div>
+        
+        <a href="https://wa.me/XXXXXXXXX?text=Hola%2C%20quisiera%20información%20sobre%20sus%20productos%20(Ventas%201)" target="_blank" class="whatsapp-contacto">
+            <div class="contacto-icon-wrapper">
+                <span>👤</span> 
+            </div>
+            <div class="contacto-details">
+                <strong>Ventas 1</strong>
+            </div>
+            <div class="contacto-chat-icon"><i class="fab fa-whatsapp"></i></div>
+        </a>
+
+        <a href="https://wa.me/YYYYYYYYY?text=Hola%2C%20quisiera%20información%20sobre%20sus%20productos%20(Ventas%202)" target="_blank" class="whatsapp-contacto">
+            <div class="contacto-icon-wrapper">
+                <span>👤</span> 
+            </div>
+            <div class="contacto-details">
+                <strong>Ventas 2</strong>
+            </div>
+            <div class="contacto-chat-icon"><i class="fab fa-whatsapp"></i></div>
+        </a>
+    </div>
+
+    <button id="whatsapp-btn" class="whatsapp-icon-btn" aria-label="Iniciar chat de WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3 class="logo-footer">PRISMA STELL</h3>
+      <p class="slogan-footer">Marca exclusiva de válvulas y conexiones certificadas</p>
+    </div>
+    <div class="footer-col">
+      <h4>Productos</h4>
+      <ul>
+        <li><a href="#">Hierro Dúctil</a></li>
+        <li><a href="#">HDPE</a></li>
+        <li><a href="#">Bronce</a></li>
+        <li><a href="#">PVC</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><i class="fas fa-phone"></i> +51 984 191 444</li>
+        <li><i class="fas fa-envelope"></i> prismasteel47@gmail.com</li>
+        <li><i class="fas fa-map-marker-alt"></i> Psj 17 A15 - Lima</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Síguenos</h4>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=100095222694233&locale=es_LA"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100095596595639&locale=es_LA"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100095596595639&locale=es_LA"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2025 PRISMA STELL — RUC 20655550778  <li>DISEÑADO POR: aronvillanuevapalma7@gmail.com</li>
+  </div>
+</footer>
+    <script src="../script.js"></script>
+</body>
+</html>
